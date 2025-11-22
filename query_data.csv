@@ -1,0 +1,9 @@
+query,answer_true
+What is the full title of the paper?,Time Series Forecasting of Solar Power Generation Using Facebook Prophet and XG Boost
+What is the DOI of the paper?,10.1109/DELCON54057.2022.9752916
+In which year was the paper published?,2022
+Which conference published this paper?,2022 IEEE Delhi Section Conference (DELCON)
+What are the keywords in the paper?,"Time series forecasting, Facebook Prophet, XG Boost"
+Who is the first author of the paper?,Rahul Gupta
+What is the email of Rahul Gupta?,rahul.ee20@nsut.ac.in
+What is the main conclusion of the research regarding the XGB model and the FB Prophet model?,The XGB model is efficient to forecast in terms of better prediction and better fitting than the FB prophet model

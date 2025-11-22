@@ -1,0 +1,1256 @@
+{
+  "source_file": "paper_5_page.pdf",
+  "total_pages": 6,
+  "pages": [
+    {
+      "page_number": 1,
+      "elements": [
+        {
+          "label": "header",
+          "bbox": [
+            574,
+            35,
+            661,
+            52
+          ],
+          "text": "ResearchGate",
+          "reading_order": 0
+        },
+        {
+          "label": "header",
+          "bbox": [
+            43,
+            81,
+            382,
+            91
+          ],
+          "text": "See discussions, stats, and author profiles for this publication at: https://www.researchgate.net/publication/371721082",
+          "reading_order": 1
+        },
+        {
+          "label": "sec_0",
+          "bbox": [
+            42,
+            103,
+            625,
+            145
+          ],
+          "text": "Forecasting Underground Water Levels: LSTM Based Model Outperforms GRU\nand Decision Tree Based Models",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            43,
+            164,
+            157,
+            186
+          ],
+          "text": "Conference Paper · December 2022",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            44,
+            198,
+            74,
+            207
+          ],
+          "text": "CITATIONS",
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "bbox": [
+            43,
+            209,
+            50,
+            219
+          ],
+          "text": "7",
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "bbox": [
+            43,
+            230,
+            112,
+            241
+          ],
+          "text": "\\$ authors, including:",
+          "reading_order": 6
+        },
+        {
+          "label": "fig",
+          "text": "![Figure](figures/paper_5_page_page_001_figure_007.png)",
+          "figure_path": "figures/paper_5_page_page_001_figure_007.png",
+          "bbox": [
+            43,
+            249,
+            70,
+            275
+          ],
+          "reading_order": 7
+        },
+        {
+          "label": "para",
+          "bbox": [
+            74,
+            251,
+            231,
+            286
+          ],
+          "text": "Md. Jafril Alam\nKhulna University of Engineering and Technology\n5 PUBLICATIONS 17 CITATIONS",
+          "reading_order": 8
+        },
+        {
+          "label": "para",
+          "bbox": [
+            84,
+            295,
+            118,
+            304
+          ],
+          "text": "SEE PROFILE",
+          "reading_order": 9
+        },
+        {
+          "label": "fig",
+          "text": "![Figure](figures/paper_5_page_page_001_figure_010.png)",
+          "figure_path": "figures/paper_5_page_page_001_figure_010.png",
+          "bbox": [
+            44,
+            322,
+            70,
+            346
+          ],
+          "reading_order": 10
+        },
+        {
+          "label": "para",
+          "bbox": [
+            74,
+            322,
+            159,
+            347
+          ],
+          "text": "Shamim Ahamed\n6 PUBLICATIONS 19 CITATIONS",
+          "reading_order": 11
+        },
+        {
+          "label": "para",
+          "bbox": [
+            84,
+            357,
+            118,
+            365
+          ],
+          "text": "SEE PROFILE",
+          "reading_order": 12
+        },
+        {
+          "label": "para",
+          "bbox": [
+            345,
+            198,
+            364,
+            219
+          ],
+          "text": "READS\n125",
+          "reading_order": 13
+        },
+        {
+          "label": "fig",
+          "text": "![Figure](figures/paper_5_page_page_001_figure_014.png)",
+          "figure_path": "figures/paper_5_page_page_001_figure_014.png",
+          "bbox": [
+            347,
+            249,
+            368,
+            275
+          ],
+          "reading_order": 14
+        },
+        {
+          "label": "para",
+          "bbox": [
+            375,
+            251,
+            532,
+            286
+          ],
+          "text": "Sakib Zaman\nKhulna University of Engineering and Technology\n8 PUBLICATIONS 36 CITATIONS",
+          "reading_order": 15
+        },
+        {
+          "label": "para",
+          "bbox": [
+            384,
+            295,
+            418,
+            304
+          ],
+          "text": "SEE PROFILE",
+          "reading_order": 16
+        },
+        {
+          "label": "foot",
+          "bbox": [
+            47,
+            857,
+            221,
+            866
+          ],
+          "text": "All content following this page was uploaded by Salikb.Zaman on 29 April 2024.",
+          "reading_order": 17
+        },
+        {
+          "label": "foot",
+          "bbox": [
+            47,
+            872,
+            204,
+            880
+          ],
+          "text": "The user has requested enhancement of the downloaded file.",
+          "reading_order": 18
+        }
+      ]
+    },
+    {
+      "page_number": 2,
+      "elements": [
+        {
+          "label": "header",
+          "bbox": [
+            53,
+            58,
+            583,
+            74
+          ],
+          "text": "2022 IEEE International Women in Engineering (WIE) Conference on Electrical and Computer Engineering (WIECON-ECE)",
+          "reading_order": 0
+        },
+        {
+          "label": "sec_0",
+          "bbox": [
+            56,
+            116,
+            636,
+            211
+          ],
+          "text": "Forecasting Underground Water Levels: LSTM\nBased Model Outperforms GRU and Decision Tree\nBased Models",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            52,
+            228,
+            344,
+            384
+          ],
+          "text": "Md. Jafril Alam\nDepartment of Computer Science and Engineering\nKhulna University of Engineering & Technology\nKhulna-9203, Bangladesh\njafrilalamshihab.kuetcse@gmail.com\nSakib Zaman\nDepartment of Computer Science and Engineering\nKhulna University of Engineering & Technology\nKhulna-9203, Bangladesh\nsakibzaman169@gmail.com",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            396,
+            228,
+            636,
+            301
+          ],
+          "text": "Sujoy Kar\n\nDepartment of Computer Science and Engineering\nKhulna University of Engineering & Technology\n\nKhulna-9203, Bangladesh\nsujoykar2009@gmail.com",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            326,
+            313,
+            563,
+            384
+          ],
+          "text": "Shamim Ahamed\nDepartment of Computer Science and Engineering\nKhulna University of Engineering & Technology\nKhulna-9203, Bangladesh\nshamim.pavel21@gmail.com",
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "bbox": [
+            225,
+            398,
+            464,
+            467
+          ],
+          "text": "Kamrunnesa Samiya\nDepartment of Computer Science and Engineering\nKhulna University of Engineering & Technology\nKhulna-9203, Bangladesh\nsamiya1707087@stud.kuet.ac.bd",
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "bbox": [
+            53,
+            488,
+            343,
+            683
+          ],
+          "text": "Abstract — Underground water is too important in human life\nfrom various perspectives, but water depletion is a significant\nproblem worldwide. The underground water level is decreasing\ndaily and often increasing in some places. In order to save\nwater, it is essential to observe underground water levels, so\nwe proposed a methodology based on machine learning and\ndeep learning to forecast underground water levels. This study\nused machine learning algorithms, including Random Forest and\nXGBoost Regressor, and deep learning algorithms like LSTM and\nGRU. We also looked into the effects of such algorithms on time\nseries data. In terms of Mean absolute error (MAE) and Root\nMean Squared Error (RMSE) score, the LSTM-based model out-\nperformed the GRU-based model, Random Forest Regressor, and\nXGBoost Regressor. In our study, deep learning algorithm-based\nmodels outperformed traditional machine learning algorithms on\ntime series data of water level. Specifically, LSTM outperformed\nother models in estimating groundwater levels.",
+          "reading_order": 6
+        },
+        {
+          "label": "para",
+          "bbox": [
+            53,
+            683,
+            343,
+            718
+          ],
+          "text": "Index Terms — Underground water, Water level, Time series\ndata, Machine Learning , Deep Learning , LSTM, GRU , Random\nForest , XGBoost",
+          "reading_order": 7
+        },
+        {
+          "label": "sec_1",
+          "bbox": [
+            150,
+            728,
+            244,
+            743
+          ],
+          "text": "I. Introduction NTRODUCTION",
+          "reading_order": 8
+        },
+        {
+          "label": "para",
+          "bbox": [
+            53,
+            745,
+            343,
+            816
+          ],
+          "text": "Underground water is essential to humans in various as-\npects, including agriculture, supply of water, and industry [1] .\nHowever, the underground water level is falling daily, and\nunderground water depletion is a worldwide issue [2] . Water\nwaste and unrestricted water pumping deplete underground",
+          "reading_order": 9
+        },
+        {
+          "label": "para",
+          "bbox": [
+            350,
+            487,
+            641,
+            653
+          ],
+          "text": "water. Additionally, the increasing underground water levels\nare sometimes caused by river flow and rainfall. As a result\nof depletion, the agricultural system and the production of\nindustries can be impeded. If groundwater levels fall below\na threshold level, there will be a shortage of drinking water.\nTherefore, monitoring the underground water level is crucial\nfor saving water. Future water levels can be predicted using\ntime series data of the water level of a specific period.\nMachine learning and deep learning-based models are used\nin data analysis and forecasting time series. However, the\nimpact of different machine learning algorithms on time series\nforecasting varies.",
+          "reading_order": 10
+        },
+        {
+          "label": "sec_1",
+          "bbox": [
+            442,
+            684,
+            548,
+            700
+          ],
+          "text": "II. Related ELATED works",
+          "reading_order": 11
+        },
+        {
+          "label": "para",
+          "bbox": [
+            350,
+            718,
+            640,
+            815
+          ],
+          "text": "Many studies on groundwater level predictions have already\nbeen conducted. Haiping Lin et al. [3] suggested a ground-\nwater level forecasting system based on GRU. Stephanie R.\nClark et al. [4] provided a method for comparing MLP, global\nMLP, SOM, LSTM, and DeepAR algorithms. S. Sahoo et al.\n[5] proposed a methodology that used ANN and regression\nmodels.",
+          "reading_order": 12
+        }
+      ]
+    },
+    {
+      "page_number": 3,
+      "elements": [
+        {
+          "label": "sec_1",
+          "bbox": [
+            90,
+            56,
+            304,
+            71
+          ],
+          "text": "III. The HE motive and goal of our work",
+          "reading_order": 0
+        },
+        {
+          "label": "para",
+          "bbox": [
+            53,
+            73,
+            343,
+            209
+          ],
+          "text": "The underground water levels are decreasing daily, causing\ndrought and water scarcity. Therefore, it is critical to observe\nthe cause of falling water levels and observe water levels to\ntake appropriate steps to save underground water. Our first goal\nwas to create models based on machine learning and deep\nlearning to forecast underground water levels and select the\nbest model. The second purpose was to examine whether deep\nlearning-based or classical machine learning-based models\nperformed better on time series data of underground water\nlevels.",
+          "reading_order": 1
+        },
+        {
+          "label": "sec_1",
+          "bbox": [
+            145,
+            215,
+            249,
+            230
+          ],
+          "text": "IV. Methodology ETHODOLOGY",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            53,
+            232,
+            343,
+            315
+          ],
+          "text": "Figure- 1 shows the proposed methodology of our research\nwork. It is already described data processing and model evalu-\nation metrics. The most concerning parts of the research were\nclassical machine learning and deep learning-based architec-\ntures: LSTM, GRU, Random Forest Regressor, and XGBoost\nRegressor.",
+          "reading_order": 3
+        },
+        {
+          "label": "sec_2",
+          "bbox": [
+            53,
+            320,
+            163,
+            335
+          ],
+          "text": "A. LSTM based model",
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "bbox": [
+            53,
+            337,
+            343,
+            501
+          ],
+          "text": "Figure- 2 depicts our proposed LSTM-based model, which\nincludes the LSTM layer, Dense layer, drop-out, and tanh\nactivation function. The Long short-term memory (LSTM)\nis one kind of recurrent neural network [6] that can handle\nsequence and time series data. An LSTM has both long-term\nand short-term memories and has three gates: an input gate, a\nforget gate, and an output gate. The cell's status is regulated\nby gates, with the input gate accepting input, the output gate\nproducing output, and the forget gate erasing old data [7] .\nFirstly Data, previous hidden, and the internal state are used\nas input in LSTM. Then values of gates, current state, and\ncurrent hidden state are calculated.",
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "bbox": [
+            53,
+            501,
+            341,
+            542
+          ],
+          "text": "A dense layer is deeply connected with its preceding layer.\nThe tanh activation function was used in this model. The tanh\nactivation function is formulated as :",
+          "reading_order": 6
+        },
+        {
+          "label": "equ",
+          "bbox": [
+            160,
+            547,
+            341,
+            565
+          ],
+          "text": "$$f ( x ) = { \\frac { \\epsilon ^ { x } - \\epsilon ^ { - x } } { \\epsilon ^ { x } + \\epsilon ^ { - x } } } \\quad( 1 )$$",
+          "reading_order": 7
+        },
+        {
+          "label": "para",
+          "bbox": [
+            53,
+            568,
+            341,
+            610
+          ],
+          "text": "Here, f(x) denotes the outcome of the activation function,\nwhich denotes the predicted water level, and x is the input\nof the activation function.",
+          "reading_order": 8
+        },
+        {
+          "label": "sec_2",
+          "bbox": [
+            53,
+            616,
+            158,
+            631
+          ],
+          "text": "B. GRU based model",
+          "reading_order": 9
+        },
+        {
+          "label": "para",
+          "bbox": [
+            53,
+            633,
+            343,
+            743
+          ],
+          "text": "Figure- 3 depicts our proposed GRU-based model, which\ncontains the GRU layer, Dense layer, drop-out, and tanh\nactivation function. The GRU is a form of recurrent neural\nnetwork with two gates; whereas the LSTM has three gates,\na GRU has two gates: the reset gate and the update gate [7]\n[8] . The reset gate is used to forget perception, whereas the\nupdate gate is used to remember based on perception. GRU's\nbasic work procedures are as follows:",
+          "reading_order": 10
+        },
+        {
+          "label": "list",
+          "bbox": [
+            63,
+            744,
+            326,
+            785
+          ],
+          "text": "• Current data, previous hidden state are used as input\n• The values of gates are calculated\n• Current memory and hidden state are calculated",
+          "reading_order": 11
+        },
+        {
+          "label": "para",
+          "bbox": [
+            63,
+            787,
+            309,
+            801
+          ],
+          "text": "In this model tanh was used as activation function .",
+          "reading_order": 12
+        },
+        {
+          "label": "fig",
+          "text": "![Figure](figures/paper_5_page_page_003_figure_013.png)",
+          "figure_path": "figures/paper_5_page_page_003_figure_013.png",
+          "bbox": [
+            349,
+            56,
+            645,
+            255
+          ],
+          "reading_order": 13
+        },
+        {
+          "label": "cap",
+          "bbox": [
+            366,
+            261,
+            624,
+            274
+          ],
+          "text": "Fig. 1. Proposed methodology to forecast underground water levels",
+          "reading_order": 14
+        },
+        {
+          "label": "fig",
+          "text": "![Figure](figures/paper_5_page_page_003_figure_015.png)",
+          "figure_path": "figures/paper_5_page_page_003_figure_015.png",
+          "bbox": [
+            349,
+            323,
+            645,
+            433
+          ],
+          "reading_order": 15
+        },
+        {
+          "label": "cap",
+          "bbox": [
+            424,
+            439,
+            566,
+            452
+          ],
+          "text": "Fig. 2. Proposed LSTM architecture",
+          "reading_order": 16
+        },
+        {
+          "label": "fig",
+          "text": "![Figure](figures/paper_5_page_page_003_figure_017.png)",
+          "figure_path": "figures/paper_5_page_page_003_figure_017.png",
+          "bbox": [
+            349,
+            503,
+            621,
+            612
+          ],
+          "reading_order": 17
+        },
+        {
+          "label": "cap",
+          "bbox": [
+            427,
+            618,
+            563,
+            631
+          ],
+          "text": "Fig. 3. Proposed GRU architecture",
+          "reading_order": 18
+        },
+        {
+          "label": "sec_2",
+          "bbox": [
+            350,
+            644,
+            441,
+            659
+          ],
+          "text": "C. Random Forest",
+          "reading_order": 19
+        },
+        {
+          "label": "para",
+          "bbox": [
+            350,
+            662,
+            640,
+            717
+          ],
+          "text": "Breiman et al. [9] proposed the random forest algorithm,\na tree-based classification algorithm currently utilized in time\nseries data. [10] The random forest algorithm's basic operating\nprocedures are as follows:",
+          "reading_order": 20
+        },
+        {
+          "label": "list",
+          "bbox": [
+            362,
+            719,
+            614,
+            748
+          ],
+          "text": "• Random Sampling of data\n• Constructing tree and voting process for prediction",
+          "reading_order": 21
+        },
+        {
+          "label": "sec_2",
+          "bbox": [
+            350,
+            755,
+            462,
+            771
+          ],
+          "text": "D. XGBoost Regressor",
+          "reading_order": 22
+        },
+        {
+          "label": "para",
+          "bbox": [
+            350,
+            772,
+            640,
+            815
+          ],
+          "text": "XGB, often known as XGBoost, is a scalable tree-based\nboosting technique for classification [11] . It can, however,\nbe applied to time series data. It calculates residual and",
+          "reading_order": 23
+        }
+      ]
+    },
+    {
+      "page_number": 4,
+      "elements": [
+        {
+          "label": "half_para",
+          "bbox": [
+            53,
+            56,
+            262,
+            72
+          ],
+          "text": "regularization parameters to produce output.",
+          "reading_order": 0
+        },
+        {
+          "label": "para",
+          "bbox": [
+            64,
+            82,
+            289,
+            99
+          ],
+          "text": "A comparison of these model are given below .",
+          "reading_order": 1
+        },
+        {
+          "label": "cap",
+          "bbox": [
+            124,
+            114,
+            271,
+            135
+          ],
+          "text": "TABLE I\nA COMPARISON AMONG THE MODELS",
+          "reading_order": 2
+        },
+        {
+          "label": "tab",
+          "bbox": [
+            88,
+            142,
+            307,
+            197
+          ],
+          "text": "<table><tr><td>Algorithm</td><td>Basis</td><td>Suitable Data Size</td></tr><tr><td>LSTM</td><td>RNN</td><td>Large</td></tr><tr><td>GRU</td><td>RNN</td><td>Medium</td></tr><tr><td>RGBoost</td><td>Decision Tree</td><td>Medium</td></tr><tr><td>Random Forest</td><td>Decision Tree</td><td>Large</td></tr></table>",
+          "reading_order": 3
+        },
+        {
+          "label": "sec_1",
+          "bbox": [
+            155,
+            211,
+            239,
+            227
+          ],
+          "text": "V. Experiment XPERIMENT",
+          "reading_order": 4
+        },
+        {
+          "label": "sec_2",
+          "bbox": [
+            53,
+            230,
+            96,
+            245
+          ],
+          "text": "A. Data",
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "bbox": [
+            53,
+            247,
+            343,
+            411
+          ],
+          "text": "We used a time series dataset provided by the ACEA group\nfrom Kaggle to conduct this research. We updated this dataset\nslightly after gathering it for ease of use. The collection\ncontains information about the some waterbody, which are\naquifers. Those is located in Italy. The dataset has 49,233 ob-\nservations in total. The dataset's key features include rainfall,\ntemperature, river hydrometry, and drainage. Furthermore, the\ntarget column of the dataset is groundWater depth. Therefore,\ndepending on factors affecting the subterranean water level,\nwe needed to anticipate the water level for the next several\ndays. The datasets used in this research is available in https:\n//www.kaggle.com/competitions/acea-water-prediction/data .",
+          "reading_order": 6
+        },
+        {
+          "label": "sec_2",
+          "bbox": [
+            53,
+            418,
+            227,
+            434
+          ],
+          "text": "B. Data Preprocessing and Analysis",
+          "reading_order": 7
+        },
+        {
+          "label": "para",
+          "bbox": [
+            53,
+            436,
+            343,
+            546
+          ],
+          "text": "Data preprocessing is critical in machine learning because\nuntidy or unprepared data can lead to errors and incorrect\nresults. So, firstly, we eliminated unnecessary and outdated\nfeatures. Next, we dealt with missing values and performed a\ndownsampling process on the dataset. Then we sorted the data\nin chronological order to maintain observation order. Finally,\nwe visualized data and examined statistics as part of the data\nanalysis.",
+          "reading_order": 8
+        },
+        {
+          "label": "sec_2",
+          "bbox": [
+            54,
+            553,
+            164,
+            568
+          ],
+          "text": "C. Performance metric",
+          "reading_order": 9
+        },
+        {
+          "label": "para",
+          "bbox": [
+            53,
+            571,
+            341,
+            639
+          ],
+          "text": "Different types of metrics are utilized to evaluate the ma-\nchine learning models. We measured the error of our model\nusing the mean absolute error (MAE), and the root mean\nsquare error (RMSE) metrics.\nMAE is formulated as :",
+          "reading_order": 10
+        },
+        {
+          "label": "equ",
+          "bbox": [
+            114,
+            649,
+            341,
+            687
+          ],
+          "text": "$$M A E = \\frac { 1 } { N } \\sum _ { j = 1 } ^ { N } ( y _ { p r e d } [ j ] - y _ { \\alpha c t } [ j ] ) \\quad( 2 )$$",
+          "reading_order": 11
+        },
+        {
+          "label": "para",
+          "bbox": [
+            54,
+            691,
+            173,
+            706
+          ],
+          "text": "RMSE is formulated as :",
+          "reading_order": 12
+        },
+        {
+          "label": "equ",
+          "bbox": [
+            102,
+            709,
+            341,
+            754
+          ],
+          "text": "$$R M S E = \\sqrt { \\frac { 1 } { N } \\sum _ { j = 1 } ^ { N } ( y _ { p r e d } [ j ] - y _ { a c t } [ j ] ) ^ { 2 } } \\quad( 3 )$$",
+          "reading_order": 13
+        },
+        {
+          "label": "para",
+          "bbox": [
+            53,
+            756,
+            225,
+            815
+          ],
+          "text": "where:\n$y_{pred}[j]$ is the predicted output\n$y_{act}[j]$ is the actual value\n$N$ is total samples",
+          "reading_order": 14
+        },
+        {
+          "label": "sec_2",
+          "bbox": [
+            350,
+            56,
+            462,
+            72
+          ],
+          "text": "D. Experimental Setup",
+          "reading_order": 15
+        },
+        {
+          "label": "para",
+          "bbox": [
+            350,
+            73,
+            640,
+            143
+          ],
+          "text": "In order to complete the experiment, we used a computer\nwith a Windows operating system, an NVIDIA GEFORCE\nGPU, and 8 GB of RAM. We have used Kaggle and Colab\nas environments too, and most of the operations related to the\nexperiment were executed in Colab.",
+          "reading_order": 16
+        },
+        {
+          "label": "sec_2",
+          "bbox": [
+            350,
+            150,
+            463,
+            165
+          ],
+          "text": "E. Training the models",
+          "reading_order": 17
+        },
+        {
+          "label": "para",
+          "bbox": [
+            350,
+            168,
+            640,
+            278
+          ],
+          "text": "The models were trained after data preprocessing and model\nselection. Because LSTM and GRU are deep learning algo-\nrithms, the training strategies for all models were not the same.\nXGBoost and Random Forest, on the other hand, are classical\nmachine learning-based algorithms. Although deep learning is\na subset of machine learning, we classified algorithms into two\ngroups to facilitate understanding. The following is a summary\nof models and critical parameters tuned during training:",
+          "reading_order": 18
+        },
+        {
+          "label": "cap",
+          "bbox": [
+            394,
+            292,
+            595,
+            315
+          ],
+          "text": "TABLE II\n\nSummary UMMARY of two deep learning based model",
+          "reading_order": 19
+        },
+        {
+          "label": "tab",
+          "bbox": [
+            391,
+            323,
+            599,
+            387
+          ],
+          "text": "<table><tr><td>Name</td><td>LSTM model</td><td>GRU model</td></tr><tr><td>No. of Dense layer</td><td>2</td><td>1</td></tr><tr><td>Activation Function</td><td>tanh</td><td>tanh</td></tr><tr><td>Dropout</td><td>0.2</td><td>0.2</td></tr><tr><td>Epoch</td><td>100</td><td>100</td></tr><tr><td>Folds</td><td>5</td><td>5</td></tr></table>",
+          "reading_order": 20
+        },
+        {
+          "label": "cap",
+          "bbox": [
+            364,
+            415,
+            626,
+            439
+          ],
+          "text": "TABLE III\n\nSummary UMMARY of two classical machine learning based model",
+          "reading_order": 21
+        },
+        {
+          "label": "tab",
+          "bbox": [
+            384,
+            445,
+            605,
+            490
+          ],
+          "text": "<table><tr><td>Name</td><td>XGBoost Regressor</td><td>Random Forest</td></tr><tr><td>Max Depth</td><td>4</td><td>5</td></tr><tr><td>Random state</td><td>0</td><td>42</td></tr><tr><td>No of Splits</td><td>3</td><td>3</td></tr></table>",
+          "reading_order": 22
+        },
+        {
+          "label": "sec_1",
+          "bbox": [
+            421,
+            504,
+            569,
+            520
+          ],
+          "text": "VI. Experimental XPERIMENTAL Results ESULTS",
+          "reading_order": 23
+        },
+        {
+          "label": "para",
+          "bbox": [
+            350,
+            522,
+            640,
+            632
+          ],
+          "text": "After the final executions of programs for our models,\npredicted results, MAE, and RMSE were recorded, and graphs\nwere saved. MAE of the LSTM-based model, GRU-based\nmodel, Random Forest Regressor, and XGBRegressor were\n0.144, 0.168, 1.493, and 1.982, respectively. RMSE of the\nLSTM-based model, GRU-based model, Random Forest Re-\ngressor, and XGBoost Regressor were 0.189, 0.203, 1.837, and\n2.467, respectively. Table- IV shows the summary of the result.",
+          "reading_order": 24
+        },
+        {
+          "label": "cap",
+          "bbox": [
+            368,
+            646,
+            621,
+            669
+          ],
+          "text": "TABLE IV\nExperimental XPERIMENTAL results for all algorithms based models",
+          "reading_order": 25
+        },
+        {
+          "label": "tab",
+          "bbox": [
+            424,
+            677,
+            566,
+            731
+          ],
+          "text": "<table><tr><td>Architecture</td><td>MAE</td><td>RMSE</td></tr><tr><td>LSTM</td><td>0.144</td><td>0.189</td></tr><tr><td>GRU</td><td>0.168</td><td>0.203</td></tr><tr><td>Random Forest</td><td>1.493</td><td>1.837</td></tr><tr><td>XGBRegressor</td><td>1.982</td><td>2.467</td></tr></table>",
+          "reading_order": 26
+        },
+        {
+          "label": "para",
+          "bbox": [
+            350,
+            745,
+            640,
+            816
+          ],
+          "text": "Figures-4 and 5 represent the graph of Groundwater depth\nvs. time for the LSTM-based and GRU-based models, respec-\ntively, where the blue line denotes the training set, the red line\ndenotes predicted values, and the purple line denotes ground\ntruth. Figures-6 and 7 represent graphs for Random Forest",
+          "reading_order": 27
+        }
+      ]
+    },
+    {
+      "page_number": 5,
+      "elements": [
+        {
+          "label": "para",
+          "bbox": [
+            53,
+            56,
+            343,
+            152
+          ],
+          "text": "Regressor and XGBRegressor, respectively. In our research,\nLSTM based model performed best whereas XGBoost Regres-\nsor performed worst. It is clear that, for time series forecasting,\ndeep learning-based models performed best over traditional\nmachine learning algorithms. The dataset was large, so LSTM\nperformed better than GRU because, for large data, LSTM\nworks well.",
+          "reading_order": 0
+        },
+        {
+          "label": "fig",
+          "text": "![Figure](figures/paper_5_page_page_005_figure_001.png)",
+          "figure_path": "figures/paper_5_page_page_005_figure_001.png",
+          "bbox": [
+            53,
+            188,
+            347,
+            322
+          ],
+          "reading_order": 1
+        },
+        {
+          "label": "cap",
+          "bbox": [
+            106,
+            331,
+            289,
+            344
+          ],
+          "text": "Fig. 4. Prediction graph of LSTM based model",
+          "reading_order": 2
+        },
+        {
+          "label": "fig",
+          "text": "![Figure](figures/paper_5_page_page_005_figure_003.png)",
+          "figure_path": "figures/paper_5_page_page_005_figure_003.png",
+          "bbox": [
+            53,
+            423,
+            346,
+            556
+          ],
+          "reading_order": 3
+        },
+        {
+          "label": "cap",
+          "bbox": [
+            108,
+            564,
+            286,
+            578
+          ],
+          "text": "Fig. 5. Prediction graph of GRU based model",
+          "reading_order": 4
+        },
+        {
+          "label": "fig",
+          "text": "![Figure](figures/paper_5_page_page_005_figure_005.png)",
+          "figure_path": "figures/paper_5_page_page_005_figure_005.png",
+          "bbox": [
+            56,
+            658,
+            347,
+            791
+          ],
+          "reading_order": 5
+        },
+        {
+          "label": "cap",
+          "bbox": [
+            101,
+            800,
+            293,
+            813
+          ],
+          "text": "Fig. 6. Prediction graph of Random Forest model",
+          "reading_order": 6
+        },
+        {
+          "label": "fig",
+          "text": "![Figure](figures/paper_5_page_page_005_figure_007.png)",
+          "figure_path": "figures/paper_5_page_page_005_figure_007.png",
+          "bbox": [
+            353,
+            56,
+            645,
+            189
+          ],
+          "reading_order": 7
+        },
+        {
+          "label": "cap",
+          "bbox": [
+            410,
+            197,
+            580,
+            210
+          ],
+          "text": "Fig. 7. Prediction graph of XGBoost model",
+          "reading_order": 8
+        },
+        {
+          "label": "sec_1",
+          "bbox": [
+            396,
+            222,
+            593,
+            237
+          ],
+          "text": "VII. Limitations IMITATIONS and future works",
+          "reading_order": 9
+        },
+        {
+          "label": "para",
+          "bbox": [
+            350,
+            241,
+            640,
+            350
+          ],
+          "text": "Some limitations were discovered after completing this\nresearch work. Firstly, some vital features, such as pumped\nwater, could be added. The second issue was certain dataset\nrestrictions. The dataset was for a specific area, so we want\nto create a dataset of locations where the underground water\nlevel is quickly falling. Another thing to consider is developing\nan attention mechanism-based system to forecast time series\ndata.",
+          "reading_order": 10
+        },
+        {
+          "label": "sec_1",
+          "bbox": [
+            445,
+            358,
+            546,
+            373
+          ],
+          "text": "VIII. Conclusion ONCLUSION",
+          "reading_order": 11
+        },
+        {
+          "label": "para",
+          "bbox": [
+            350,
+            376,
+            640,
+            540
+          ],
+          "text": "A system was designed and constructed successfully to\nforecast the underground water level. The system contains\ndata processing, prediction, and model evaluation. As a result,\nthe system can predict the future water level and produce\npredicted results and models error. The system employed\nvarious classical machine learning and deep learning-based\nalgorithms. The LSTM outperformed the others in estimating\nunderground water levels. It is also clear that deep learning-\nbased models perform better than classical machine learning\nalgorithms on time series data. Therefore, this system will help\nto observe water levels in many countries, and it will help to\nreduce the waste of water.",
+          "reading_order": 12
+        },
+        {
+          "label": "sec_1",
+          "bbox": [
+            461,
+            548,
+            529,
+            563
+          ],
+          "text": "REFERENCES",
+          "reading_order": 13
+        },
+        {
+          "label": "reference",
+          "bbox": [
+            356,
+            568,
+            638,
+            600
+          ],
+          "text": "[1] Brands, Edwin, et al. \"Groundwater.\" International Encyclopedia of\nGeography: People, the Earth, Environment and Technology: People,\nthe Earth, Environment and Technology (2016): 1-17.",
+          "reading_order": 14
+        },
+        {
+          "label": "reference",
+          "bbox": [
+            356,
+            600,
+            638,
+            620
+          ],
+          "text": "[2] Konikow, Leonard F., and Eloise Kendy. \"Groundwater depletion: A\nglobal problem.\" Hydrogeology Journal 13.1 (2005): 317-320.",
+          "reading_order": 15
+        },
+        {
+          "label": "reference",
+          "bbox": [
+            356,
+            620,
+            638,
+            651
+          ],
+          "text": "[3] Lin, Haiping, et al. \"Time series-based groundwater level forecasting\nusing gated recurrent unit deep neural networks.\" Engineering Applica-\ntions of Computational Fluid Mechanics 16.1 (2022): 1655-1672.",
+          "reading_order": 16
+        },
+        {
+          "label": "reference",
+          "bbox": [
+            356,
+            651,
+            638,
+            691
+          ],
+          "text": "[4] Clark, Stephanie R., Dan Pagendam, and Louise Ryan. \"Forecasting\nMultiple Groundwater Time Series with Local and Global Deep Learn-\ning Networks.\" International Journal of Environmental Research and\nPublic Health 19.9 (2022): 5091.",
+          "reading_order": 17
+        },
+        {
+          "label": "reference",
+          "bbox": [
+            356,
+            691,
+            638,
+            721
+          ],
+          "text": "[5] Sahoo, S., et al. \"Machine learning algorithms for modeling groundwater\nlevel changes in agricultural regions of the US.\" Water Resources\nResearch 53.5 (2017): 3878-3895.",
+          "reading_order": 18
+        },
+        {
+          "label": "reference",
+          "bbox": [
+            356,
+            721,
+            638,
+            742
+          ],
+          "text": "[6] Hochreiter, Sepp, and Jürgen Schmidhuber. \"Long short-term memory.\"\nNeural computation 9.8 (1997): 1735-1780.",
+          "reading_order": 19
+        },
+        {
+          "label": "reference",
+          "bbox": [
+            356,
+            742,
+            638,
+            772
+          ],
+          "text": "[7] Staudemeyer, Ralf C., and Eric Rothstein Morris. \"Understanding\nLSTM–a tutorial into long short-term memory recurrent neural net-\nworks.\" arXiv preprint arXiv:1909.09586 (2019).",
+          "reading_order": 20
+        },
+        {
+          "label": "reference",
+          "bbox": [
+            356,
+            772,
+            638,
+            803
+          ],
+          "text": "[8] Cho, Kyunghyun, et al. \"Learning phrase representations using RNN\nencoder-decoder for statistical machine translation.\" arXiv preprint\narXiv:1406.1078 (2014).",
+          "reading_order": 21
+        },
+        {
+          "label": "reference",
+          "bbox": [
+            356,
+            803,
+            634,
+            814
+          ],
+          "text": "[9] Breiman, Leo. \"Random forests.\" Machine learning 45.1 (2001): 5-32.",
+          "reading_order": 22
+        }
+      ]
+    },
+    {
+      "page_number": 6,
+      "elements": [
+        {
+          "label": "reference",
+          "bbox": [
+            53,
+            59,
+            341,
+            90
+          ],
+          "text": "[10] Davis, Richard A., and Mikkel S. Nielsen. \"Modeling of time series\nusing random forests: Theoretical developments.\" Electronic Journal of\nStatistics 14.2 (2020): 3644-3671.",
+          "reading_order": 0
+        },
+        {
+          "label": "reference",
+          "bbox": [
+            53,
+            90,
+            341,
+            121
+          ],
+          "text": "[11] Chen, Tianqi, and Carlos Guestrin. \"Xgboost: A scalable tree boosting\nsystem.\" Proceedings of the 22nd acm sigkdd international conference\non knowledge discovery and data mining. 2016.",
+          "reading_order": 1
+        },
+        {
+          "label": "foot",
+          "bbox": [
+            55,
+            885,
+            102,
+            893
+          ],
+          "text": "View publication stats",
+          "reading_order": 2
+        }
+      ]
+    }
+  ]
+}

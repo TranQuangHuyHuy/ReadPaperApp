@@ -1,0 +1,1116 @@
+{
+  "source_file": "abc.pdf",
+  "total_pages": 5,
+  "pages": [
+    {
+      "page_number": 1,
+      "elements": [
+        {
+          "label": "sec_0",
+          "bbox": [
+            46,
+            28,
+            576,
+            89
+          ],
+          "text": "Time Series Forecasting of Solar Power\nGeneration Using Facebook Prophet and XG Boost",
+          "reading_order": 0
+        },
+        {
+          "label": "para",
+          "bbox": [
+            57,
+            96,
+            178,
+            152
+          ],
+          "text": "Rahul Gupta\nDepartment of Electrical\nEngineering, NSUT, New\nDelhi, 110078, India.\nE-mail: rahul.ee20@nsut.ac.in",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            188,
+            96,
+            311,
+            152
+          ],
+          "text": "Anil Kumar Yadav\nDepartment of Electrical\nEngineering, NIT Hamirpur,\nHamirpur (H.P.) 177005, India.\nE-mail: anilei007@gmail.com",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            331,
+            96,
+            443,
+            152
+          ],
+          "text": "SK Jha\nDepartment of ICE,\nNSUT, New Delhi, 110078,\nIndia.\nE-mail: skjha@nsut.ac.in",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            454,
+            97,
+            583,
+            152
+          ],
+          "text": "Pawan Kumar Pathak\nSchool of Automation,\nBanasthali Vidyapith, Rajasthan,\n304022, India.\nE-mail: ppathak999@gmail.com",
+          "reading_order": 4
+        },
+        {
+          "label": "para",
+          "bbox": [
+            45,
+            165,
+            315,
+            389
+          ],
+          "text": "Abstract — In recent years solar energy penetration in local\ngrids is increasing, resulting in a reduction in reliability, so\nsmart grid planning is required to improve grid reliability and\nleverage the grid's capabilities. Due to the increasing, no of solar\npower plants, day by day in the energy sector, and reduction of\ndependency on fossil fuels, prediction of solar power generation\nis necessary for future planning for smart grid integration.\nForecasting techniques are employed to tackle a wide range of\nproblems, such as renewable energy generation, electric load and\nprice, demand-side management, the financial & banking sector,\nhealthcare, stock market, and cyberspace security prediction,\netc. In the time-series dataset, there is information related to the\ntime that can be used to predict and analyze data. Machine\nLearning algorithms such as Facebook (FB) Prophet and\nExtreme Gradient Boost (XGB) are used for predicting solar\nenergy generation on a monthly and weekly basis. From this\nproposed research, it concluded that the XGB model is efficient\nto forecast in terms of better prediction and better fitting than\nthe FB prophet model. RMSE, MAPE, and MAE parameters are\ncalculated to check the performance of the time series model.",
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "bbox": [
+            46,
+            397,
+            304,
+            422
+          ],
+          "text": "Keywords — Time series forecasting, Facebook Prophet, XG\nBoost",
+          "reading_order": 6
+        },
+        {
+          "label": "sec_1",
+          "bbox": [
+            137,
+            430,
+            220,
+            444
+          ],
+          "text": "I. Introduction NTRODUCTION",
+          "reading_order": 7
+        },
+        {
+          "label": "para",
+          "bbox": [
+            44,
+            448,
+            313,
+            773
+          ],
+          "text": "A NY data recorded with some fixed time interval of\ntime is known as time-series data. This fixed interval\ncan be on an hourly, daily, monthly or yearly basis,\ne.g. hourly temp reading, daily changing fuel prices, monthly\nelectricity bill and annual company profit report etc. In time\nseries data, time will always be independent variable and\nthere can be one or many dependent variable. The objective\nof time series analysis is to understand how change in time\naffects the dependent variables and accordingly predict\nvalues for future time intervals. In light of the widespread\nuse of renewable energy sources and distributed generation,\nthere is an ever-increasing interest in integrating solar power\ninto utility grids. The current power grid is being disrupted\nby a vast number of distributed and intermittent energy\nsystems. This effectively transforms the passive,\nunidirectional grid into an active, bidirectional, and\nintelligent grid. A growing number of devices and systems\nare continuously connected to participants in the power grid.\nConsequently, the smart grid generates and exchanges\nmassive amounts of data between different entities. This data\ncan be very useful for the researchers and technocrats for the\nprediction applications in smart grid with the integration of\nrenewable sources after preprocessed and analyzed.",
+          "reading_order": 8
+        },
+        {
+          "label": "para",
+          "bbox": [
+            45,
+            773,
+            312,
+            816
+          ],
+          "text": "Under the Ministry of New and Renewable Energy\n(MNRE), the Government of India has taken steps to establish\nsolar energy projects that will supply electricity at a low cost,",
+          "reading_order": 9
+        },
+        {
+          "label": "para",
+          "bbox": [
+            322,
+            166,
+            590,
+            434
+          ],
+          "text": "reach remote areas, reduce dependence on conventional power\nsources, and reach out to rural areas [1] . In June 2020, solar\nenergy had an installed capacity of 35 GW in India and would\nreach 100 GW by 2022. The solar mw generation profile is\nnot fixed due to rapid changes in atmosphere conditions which\nleads to grid integration issues. In order to avoid this issue,\nthere is a need of accurate solar power generation information\nto balance between the power generation and utilities and grid\n[2, 3] . As a result, a suitable day-ahead forecast model of\nsolar power is necessary for optimal PV-based grids, as\nintroduced in [4, 5] . In this paper, we have obtained time\nseries data of solar MW generation, which work as an input.\nXGB and a Facebook Prophet technique are used to predict\naccurate solar MW output and compare results in terms of\nMAPE, MSE and MAE. For predicting the solar MW\ngeneration, time-series data is collected from online sources,\nand the test results forecasted by Machine Learning (ML)\nalgorithms such as XGB and FB Prophet are mutually\ncompared.",
+          "reading_order": 10
+        },
+        {
+          "label": "sec_1",
+          "bbox": [
+            398,
+            447,
+            512,
+            462
+          ],
+          "text": "II. LITERATURE REVIEW",
+          "reading_order": 11
+        },
+        {
+          "label": "para",
+          "bbox": [
+            322,
+            468,
+            590,
+            821
+          ],
+          "text": "In this paper, a multivariate regression method is introduced\nfor the forecasting of daily output power in a grid-connected\nPV system [6] . Support vector machine, time series\ntechniques like ARIMA and LSTM techniques for PV power\nprediction is discussed in [7-9] . Deep convolution neural\nnetwork for the day ahead solar power forecasting is\ndescribed in [10] . Prediction of 100kW PV plant output\npower is discussed by using FB prophet and ARIMA model\n[11] . Deep learning-based convolutional neural network and\nlong short term memory network model for predicting solar\nirradiance is delineated in [12] . For the proper integration of\nrenewable energy sources into the smart grid and due to the\nvariable nature of renewable energy generation systems,\nforecast measures are helpful for smart grid infrastructure\nplanning. For sequential data analysis, LSTM network model\nfor PV power forecasting is described in [13] . This paper\npresents a solar irradiance prediction from a few hours to two\ndays by using machine learning techniques [14] . ANN, DL,\nSVM and k-NN algorithms are presented in this study to\npredict the global solar irradiance [15] . An innovative\ntechnique of forecasting solar power generation is introduced\nusing the least absolute shrinkage and selection operator\n(LASSO) to achieve high accuracy [16] . A novel PV\nforecasting technique done by PV cell temperature and their\nirradiance components modelling is presented in [17] . A",
+          "reading_order": 12
+        },
+        {
+          "label": "foot",
+          "bbox": [
+            45,
+            848,
+            236,
+            863
+          ],
+          "text": "978-1-6654-5883-2/22/$31.00 c2022 IEEE",
+          "reading_order": 13
+        },
+        {
+          "label": "watermark",
+          "bbox": [
+            9,
+            358,
+            22,
+            834
+          ],
+          "text": "2022 IEEE Delhi Section Conference (DELCON) | 978-1-6654-5883-2/22/$31.00 €2022 IEEE | DOI: 10.1109/DELCON54057.2022.9752916",
+          "reading_order": 14
+        }
+      ]
+    },
+    {
+      "page_number": 2,
+      "elements": [
+        {
+          "label": "half_para",
+          "bbox": [
+            45,
+            56,
+            312,
+            142
+          ],
+          "text": "study of PV power generation forecasting and nowcasting is\ndone by using neural networks and machine learning\nalgorithms [18-20] . An extensive review of PV power\nforecasting at different time intervals is elaborated in [21] .\nShort term forecasting of PV power output using SVM\nalgorithm is proposed to predict output power in [22, 27] .",
+          "reading_order": 0
+        },
+        {
+          "label": "sec_1",
+          "bbox": [
+            110,
+            154,
+            248,
+            169
+          ],
+          "text": "III. Material ATERIAL and Methods ETHODS",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            45,
+            176,
+            312,
+            274
+          ],
+          "text": "In this study, the general process is followed for the\nprediction of solar power generation. Fig. 1 shows the\nflowchart of the solar MW prediction module. The dataset is\ninitially divided into training and testing data. Further, the\ndata is preprocessed before training, and then the time series\ntechniques such as FB prophet and XGBoost are selected for\nthe solar power consumption in future.",
+          "reading_order": 2
+        },
+        {
+          "label": "fig",
+          "text": "![Figure](figures/abc_page_002_figure_003.png)",
+          "figure_path": "figures/abc_page_002_figure_003.png",
+          "bbox": [
+            47,
+            274,
+            309,
+            411
+          ],
+          "reading_order": 3
+        },
+        {
+          "label": "cap",
+          "bbox": [
+            56,
+            411,
+            232,
+            423
+          ],
+          "text": "Fig. 1. Flowchart of Solar MW Prediction Module",
+          "reading_order": 4
+        },
+        {
+          "label": "sec_2",
+          "bbox": [
+            45,
+            434,
+            143,
+            448
+          ],
+          "text": "A. Data Preparation",
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "bbox": [
+            45,
+            448,
+            312,
+            660
+          ],
+          "text": "Data Collection: Time series forecasting of solar energy\ndataset is collected from Kaggle repository [23] . In this\npaper, univariate analysis by considering only one dependent\nvariable, i.e. solar-MW for the proposed dataset, is done. The\nobjective of this research work is to do the univariate time\nseries analysis of solar power generation data and\nsubsequently forecast the amount of solar energy generated\nin future. The dataset consists of the data for the period from\n5 Jan 2007 to 8 Mar 2020, which comprises 1, 16,117 rows\nand 8 columns. The features of this data are Datetime, solar-\nMW, wind-direction, wind-speed, humidity, average wind-\nspeed, average pressure and temperature. Only a single\nfeature is considered for the time series forecasting, i.e.\nsolar-MW. The solar-MW generation data is distributed\nagainst year, as shown in Fig. 2 .",
+          "reading_order": 6
+        },
+        {
+          "label": "fig",
+          "text": "![Figure](figures/abc_page_002_figure_007.png)",
+          "figure_path": "figures/abc_page_002_figure_007.png",
+          "bbox": [
+            47,
+            660,
+            307,
+            744
+          ],
+          "reading_order": 7
+        },
+        {
+          "label": "cap",
+          "bbox": [
+            45,
+            746,
+            275,
+            759
+          ],
+          "text": "Fig. 2. Historical Data Distribution of solar power generation data",
+          "reading_order": 8
+        },
+        {
+          "label": "para",
+          "bbox": [
+            45,
+            769,
+            312,
+            813
+          ],
+          "text": "Data preprocessing: Data preprocessing is a process of\npreparing the raw data and making it suitable for the machine\nlearning model. Missing values in a dataset are cleaned or",
+          "reading_order": 9
+        },
+        {
+          "label": "para",
+          "bbox": [
+            322,
+            56,
+            589,
+            185
+          ],
+          "text": "dropped from the data for enhancing the performance. In this\npaper, it is required to prepare the dataset and create a data\nframe with two columns out of which one column contains\nthe time information represented as `ds' (datestamp), and\nanother column contains the feature represented as `y',\nwhich is target variable -`solar-MW' as given in TABLE I .\nFeature scaling, such as normalization or standardization,\ncan be used for fast execution of code and better prediction.\nThe proposed model is then trained on the dataset.",
+          "reading_order": 10
+        },
+        {
+          "label": "cap",
+          "bbox": [
+            379,
+            189,
+            531,
+            202
+          ],
+          "text": "TABLE I: Solar MW generation (ds and y)",
+          "reading_order": 11
+        },
+        {
+          "label": "tab",
+          "bbox": [
+            364,
+            202,
+            547,
+            273
+          ],
+          "text": "<table><tr><td></td><td>ds</td><td>y</td></tr><tr><td>0</td><td>2017-01-01</td><td>12792</td></tr><tr><td>1</td><td>2016-12-31</td><td>13140</td></tr><tr><td>2</td><td>2016-12-31</td><td>13454</td></tr><tr><td>3</td><td>2016-12-31</td><td>13759</td></tr><tr><td>4</td><td>2016-12-31</td><td>13987</td></tr></table>",
+          "reading_order": 12
+        },
+        {
+          "label": "para",
+          "bbox": [
+            322,
+            279,
+            589,
+            349
+          ],
+          "text": "Exploratory Data Analysis: This step is used for analyzing\nand investigating the dataset and summarizing its main\ncharacteristics by employing visualization methods. The\nprimary purpose of this step is to find the pattern that exists\nin a dataset.",
+          "reading_order": 13
+        },
+        {
+          "label": "para",
+          "bbox": [
+            322,
+            349,
+            589,
+            434
+          ],
+          "text": "Performance Matrices: In order to check the performance of\nthe proposed models, some evaluation metrics such as mean\nsquared error (MSE), mean absolute error (MAE) and mean\nabsolute percentage error (MAPE) is computed. These\nmetrics are imported from the Scikitlearn library of the\npython framework.",
+          "reading_order": 14
+        },
+        {
+          "label": "equ",
+          "bbox": [
+            323,
+            434,
+            441,
+            465
+          ],
+          "text": "$$ M S E  = \\frac { 1 } { N } \\sum _ { t } ( o t - P t ) ^ { 2 }$$",
+          "reading_order": 15
+        },
+        {
+          "label": "equ",
+          "bbox": [
+            323,
+            467,
+            428,
+            485
+          ],
+          "text": "$$MAE=\\frac{1}{N} \\sum_{t}(O t-P t)$$",
+          "reading_order": 16
+        },
+        {
+          "label": "equ",
+          "bbox": [
+            324,
+            486,
+            428,
+            517
+          ],
+          "text": "$$ MAPE  = \\frac { 1 } { N } \\sum _ { t } ^ { o t - p t } \\frac { \\partial t } { \\partial t }$$",
+          "reading_order": 17
+        },
+        {
+          "label": "para",
+          "bbox": [
+            322,
+            518,
+            589,
+            546
+          ],
+          "text": "where, O = original data, P = predicted data, N= number of\ntimes summation iteration.",
+          "reading_order": 18
+        },
+        {
+          "label": "sec_2",
+          "bbox": [
+            322,
+            553,
+            413,
+            567
+          ],
+          "text": "B. Model Selection",
+          "reading_order": 19
+        },
+        {
+          "label": "para",
+          "bbox": [
+            322,
+            573,
+            589,
+            743
+          ],
+          "text": "Facebook Prophet Model: The prophet is a procedure for\nforecasting time series data based on an additive model\nwhere non-linear trends are fitted on the basis of yearly,\nweekly, daily seasonality and holiday effects [24] . It works\nbest with the time series that have strong seasonal effects and\nseveral season-wise historical data. The prophet is a robust\nmethod for handling the missing data and outliers apart from\npredicting the shifts in the trend. The prophet is open source\nsoftware released by Facebook's Core Data Science team.\nProphet is Facebook's open-source tool for making time-\nseries predictions. This FB prophet forecasting utilizes\nthe additive regression model $y(w)$ as given in (1) below.",
+          "reading_order": 20
+        },
+        {
+          "label": "equ",
+          "bbox": [
+            323,
+            745,
+            568,
+            759
+          ],
+          "text": "$$y ( w ) = g ( w ) + s ( w ) + h ( w ) + e ( w ) \\quad( 1 )$$",
+          "reading_order": 21
+        },
+        {
+          "label": "para",
+          "bbox": [
+            322,
+            760,
+            588,
+            817
+          ],
+          "text": "where, $y(w)$ is the additive regressive model, $g(w)$ is the\ntrend factor, $s(w)$ is the seasonality factor, $h(w)$ is the\nholiday factor, and $e(w)$ is the error factor. All these factors\nare illustrated as below.",
+          "reading_order": 22
+        }
+      ]
+    },
+    {
+      "page_number": 3,
+      "elements": [
+        {
+          "label": "para",
+          "bbox": [
+            45,
+            56,
+            312,
+            155
+          ],
+          "text": "Trend: Trend represents the change in dependent variables\nwith respect to time from start to end. In case of an\nincreasing trend, the dependent variable will increase with\ntime and vice versa. It is not necessary to have a definite\ntrend in time series. It can have either an increasing or\ndecreasing trend for time series data. In short, the trend\nrepresents the varying mean of time series data.",
+          "reading_order": 0
+        },
+        {
+          "label": "para",
+          "bbox": [
+            45,
+            155,
+            312,
+            240
+          ],
+          "text": "Seasonability: If observations repeat after a fixed time\ninterval, they are referred to as seasonal observations. These\nseasonal changes in data can occur because of natural events\nor man-made events. For example, every year, warm clothes\nsales increase just before the winter season. So seasonality\nrepresents the data variations at fixed intervals.",
+          "reading_order": 1
+        },
+        {
+          "label": "para",
+          "bbox": [
+            45,
+            240,
+            312,
+            268
+          ],
+          "text": "Holiday effect: It occurs on an irregular schedule, either for\none day or a couple of days.",
+          "reading_order": 2
+        },
+        {
+          "label": "para",
+          "bbox": [
+            45,
+            268,
+            312,
+            296
+          ],
+          "text": "Error: It represents information for any unusual changes that\nwas not reflected in the model.",
+          "reading_order": 3
+        },
+        {
+          "label": "para",
+          "bbox": [
+            45,
+            296,
+            312,
+            507
+          ],
+          "text": "XG Boost Model: Data Science is gaining increasing\nimportance across many fields in the last decade. The\nextreme gradient boosting (XGBoost) model has become a\npopular tool for many applications. In these days, big data\nand artificial intelligence is becoming more popular.\nBoosting methods are progressing day by day with time. In\nmany real-world applications, a well-known technique of\nboosting like XGB gives a good result for the prediction of\nclassification and regression problems. It is a perfect\ncombination of hardware and software optimization\ntechniques that gives accurate results with the least\ncomputation time. It follows the innovative gradient boosted\ndecision tree-based searching method [25, 26] . The objective\nfunction of XG Boost model on the $w^{\\text{th}}$ iteration as evaluated\nin (2) below.",
+          "reading_order": 4
+        },
+        {
+          "label": "equ",
+          "bbox": [
+            46,
+            507,
+            290,
+            523
+          ],
+          "text": "$$Z ^ { ( w ) } = \\sum _ { i = 1 } ^ { n } z ( f _ { i } , \\hat { f } _ { i } ( w - 1 ) + g _ { w } ( r _ { i } ) ) + \\partial ( g _ { w } ) \\quad( 2 )$$",
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "bbox": [
+            45,
+            523,
+            311,
+            552
+          ],
+          "text": "where, $z$ is the loss function, $g_w$ is the $w^{\\text{th}}$ tree output and $\\partial$\nis the regularization.",
+          "reading_order": 6
+        },
+        {
+          "label": "sec_1",
+          "bbox": [
+            74,
+            565,
+            283,
+            580
+          ],
+          "text": "IV. Experimental XPERIMENTAL Results ESULTS and Discussion ISCUSSION",
+          "reading_order": 7
+        },
+        {
+          "label": "para",
+          "bbox": [
+            44,
+            585,
+            312,
+            812
+          ],
+          "text": "The time series dataset is processed through the two\ntechniques for solar power prediction. The entire dataset\nused for the solar-MW prediction is splitted into training and\ntesting datasets. The dataset from 5 JAN 2007 to 1 JAN 2017\nis used for training purposes, and from 1 JAN 2017 to 8 Mar\n2020 is used for testing purposes as depicted in Fig 3 . Then\nthe model is trained, and the performance is checked by the\nparameters MAE, MSE & % MAPE at each time step. This\nstudy gives the predictions of the solar power generation for\nfuture 24 months as shown in Fig. 4 . In order to clearly\nunderstand the predicted values, actual values and forecast\nerrors, a forecast plot is made, as shown in Fig. 4 . In this\nplot, the black dot shows the actual values, the blue line\nrepresents the forecasted values up to 2021, and the blue\nshaded area shows the forecasted error. This model\nprediction plot generates a component plot in terms of an",
+          "reading_order": 8
+        },
+        {
+          "label": "para",
+          "bbox": [
+            322,
+            56,
+            588,
+            100
+          ],
+          "text": "individual component such as trend, weekly, yearly and daily\nseasonality components of solar power generation are shown\nin Fig. 5 .",
+          "reading_order": 9
+        },
+        {
+          "label": "fig",
+          "text": "![Figure](figures/abc_page_003_figure_010.png)",
+          "figure_path": "figures/abc_page_003_figure_010.png",
+          "bbox": [
+            325,
+            100,
+            578,
+            200
+          ],
+          "reading_order": 10
+        },
+        {
+          "label": "cap",
+          "bbox": [
+            322,
+            202,
+            486,
+            214
+          ],
+          "text": "Fig. 3. Division of Training and testing dataset",
+          "reading_order": 11
+        },
+        {
+          "label": "fig",
+          "text": "![Figure](figures/abc_page_003_figure_012.png)",
+          "figure_path": "figures/abc_page_003_figure_012.png",
+          "bbox": [
+            325,
+            227,
+            578,
+            324
+          ],
+          "reading_order": 12
+        },
+        {
+          "label": "cap",
+          "bbox": [
+            322,
+            325,
+            484,
+            338
+          ],
+          "text": "Fig. 4. Forecast plot of solar power generation",
+          "reading_order": 13
+        },
+        {
+          "label": "fig",
+          "text": "![Figure](figures/abc_page_003_figure_014.png)",
+          "figure_path": "figures/abc_page_003_figure_014.png",
+          "bbox": [
+            325,
+            350,
+            573,
+            585
+          ],
+          "reading_order": 14
+        },
+        {
+          "label": "cap",
+          "bbox": [
+            322,
+            585,
+            583,
+            599
+          ],
+          "text": "Fig. 5. Daily, yearly and weekly component plot of solar power generation",
+          "reading_order": 15
+        },
+        {
+          "label": "para",
+          "bbox": [
+            322,
+            610,
+            589,
+            710
+          ],
+          "text": "It shows a better illustration of the forecasted model. The\ntrend component represents the pattern of solar power\ngeneration. The weekly component plot shows that the\nhighest solar power is used during weekends than that on\nweekdays; yearly component plot shows that the same is\nbeing used between July to September, and for days it is used\nin the evening.",
+          "reading_order": 16
+        },
+        {
+          "label": "sec_2",
+          "bbox": [
+            322,
+            716,
+            427,
+            730
+          ],
+          "text": "A. Monthly Prediction",
+          "reading_order": 17
+        },
+        {
+          "label": "para",
+          "bbox": [
+            322,
+            737,
+            590,
+            808
+          ],
+          "text": "After testing the model, the prediction for a monthly plot of\nJanuary 2017 is obtained and shown in Fig. 6 (a) and (b)\nusing FB Prophet and XGB algorithm. In Fig. 6(a) , the green\ndot indicates the forecast values, and the blue dot represents\nthe actual generation values using FB Prophet model. In Fig.",
+          "reading_order": 18
+        }
+      ]
+    },
+    {
+      "page_number": 4,
+      "elements": [
+        {
+          "label": "half_para",
+          "bbox": [
+            45,
+            56,
+            311,
+            85
+          ],
+          "text": "6(b), the red dot indicates the forecast values, and the blue\ndot represents the actual generation values using XGBoost.",
+          "reading_order": 0
+        },
+        {
+          "label": "fig",
+          "text": "![Figure](figures/abc_page_004_figure_001.png)",
+          "figure_path": "figures/abc_page_004_figure_001.png",
+          "bbox": [
+            50,
+            85,
+            307,
+            299
+          ],
+          "reading_order": 1
+        },
+        {
+          "label": "cap",
+          "bbox": [
+            45,
+            299,
+            312,
+            334
+          ],
+          "text": "Fig. 6. Monthly Prediction (a) Forecast vs. Actual plot of Solar MW of\nmonth JAN 2017 using FB prophet, and (b) Forecast vs Actual plot of Solar\nMW of month JAN 2017 using XGB",
+          "reading_order": 2
+        },
+        {
+          "label": "fig",
+          "text": "![Figure](figures/abc_page_004_figure_003.png)",
+          "figure_path": "figures/abc_page_004_figure_003.png",
+          "bbox": [
+            47,
+            342,
+            310,
+            563
+          ],
+          "reading_order": 3
+        },
+        {
+          "label": "cap",
+          "bbox": [
+            45,
+            563,
+            312,
+            597
+          ],
+          "text": "Fig. 7. Weekly Prediction (a) Forecast Vs. Actual of first week of JAN\n2017 using FB prophet, and (b) Forecast Vs Actual of first week of JAN\n2017 using XGB prophet",
+          "reading_order": 4
+        },
+        {
+          "label": "sec_2",
+          "bbox": [
+            45,
+            607,
+            145,
+            622
+          ],
+          "text": "B. Weekly Prediction",
+          "reading_order": 5
+        },
+        {
+          "label": "para",
+          "bbox": [
+            45,
+            622,
+            312,
+            748
+          ],
+          "text": "The forecast versus actual plot of the first week of Feb 2017\nis shown in Fig. 7 . Fig. 7 (a) represents the plot of solar MW\ngeneration in the first week of Feb 2017 using FB prophet,\nand Fig. 7 (b) represents the same by XGB model.\nForecasting solar power generation is an onerous task\nbecause it is stochastic in nature. In this study, it is predicted\nby FB Prophet and XGB model. The performances of the\nmodels are checked by the following parameters such as\nMSE, MAE and MAPE, respectively, in TABLE II .",
+          "reading_order": 6
+        },
+        {
+          "label": "cap",
+          "bbox": [
+            79,
+            754,
+            277,
+            766
+          ],
+          "text": "TABLE II: Evaluation parameters of proposed algorithm",
+          "reading_order": 7
+        },
+        {
+          "label": "tab",
+          "bbox": [
+            47,
+            766,
+            304,
+            814
+          ],
+          "text": "<table><tr><td>Model</td><td colspan=\"3\">Performance Metrics</td></tr><tr><td></td><td>MSE</td><td>MAE</td><td>%MAPE</td></tr><tr><td>FB Prophet</td><td>8440621.416</td><td>2371.27903963</td><td>21.846587495320</td></tr><tr><td>XG Boost</td><td>2900829.114</td><td>1265.99691889</td><td>10.953978666291</td></tr></table>",
+          "reading_order": 8
+        },
+        {
+          "label": "para",
+          "bbox": [
+            322,
+            56,
+            589,
+            126
+          ],
+          "text": "As it can be seen that the XGB outperforms the FB Prophet\nin terms of %MAPE as it gives the lowest percentage error.\nThe performance results demonstrate that the proposed XG\nBoost has significant improvement in terms of MSE and\nMAE.",
+          "reading_order": 9
+        },
+        {
+          "label": "sec_1",
+          "bbox": [
+            415,
+            134,
+            495,
+            148
+          ],
+          "text": "V. Conclusion ONCLUSION",
+          "reading_order": 10
+        },
+        {
+          "label": "para",
+          "bbox": [
+            322,
+            153,
+            590,
+            323
+          ],
+          "text": "For power quality improvement and stable power supply into\nthe grid, there is a need for accurate prediction of solar\npower generation. This paper proposes two ML methods\nsuch as Facebook Prophet and XGB, for solar power\nprediction. The XGB model fits better with the dataset as\ncompared to FB prophet model. Due to the high seasonality\nin dataset, XGB and Facebook Prophet handle the large data\neffectively. In future work, a deep learning technique which\nmay handle a large amount of data will be used to improve\nthe prediction error. A shorter duration of solar power\ngeneration data could also be used for further improvement\nof results.",
+          "reading_order": 11
+        },
+        {
+          "label": "sec_1",
+          "bbox": [
+            322,
+            329,
+            381,
+            343
+          ],
+          "text": "REFERENCES",
+          "reading_order": 12
+        },
+        {
+          "label": "reference",
+          "bbox": [
+            328,
+            350,
+            588,
+            393
+          ],
+          "text": "[1] Bansal, M., Kumar, A., and Virmani, A \"Green IoT: Current\nScenario & Future Prospects\". Journal of trends in Computer\nScience and Smart technology (TCSST), vol. 2, no.4, pp.173-180,\n2020.",
+          "reading_order": 13
+        },
+        {
+          "label": "reference",
+          "bbox": [
+            328,
+            395,
+            588,
+            440
+          ],
+          "text": "[2] Shah, R., Mithulananthan, N., Bansal, R. C., &\nRamachandranzurthy, V. K. \"A review of key power system\nstability challenges for large-scale PV integration\", Renewable and\nSustainable Energy Reviews, vol. 41, pp.1423-1436, 2015.",
+          "reading_order": 14
+        },
+        {
+          "label": "reference",
+          "bbox": [
+            328,
+            441,
+            588,
+            474
+          ],
+          "text": "[3] Hossain, E., Hossain, J., & Un-Noor, F. \"Utility grid: Present\nchallenges and their potential solutions\". IEEE Access, vol.6, pp.\n60294-60317, 2018.",
+          "reading_order": 15
+        },
+        {
+          "label": "reference",
+          "bbox": [
+            328,
+            475,
+            588,
+            508
+          ],
+          "text": "[4] Agoua, X. G., Girard, R., & Kariniotakis, G. \"Short-term spatio-\ntemporal forecasting of photovoltaic power production\". IEEE\nTransactions on Sustainable Energy, vol.9, no.2, pp.538-546, 2017.",
+          "reading_order": 16
+        },
+        {
+          "label": "reference",
+          "bbox": [
+            328,
+            509,
+            588,
+            552
+          ],
+          "text": "[5] Nespoli, A., Ogliari, E., Leva, S., Massi Pavan, A., Mellit, A.,\nLughi, V., & Dolara, A. \"Day-ahead photovoltaic forecasting: A\ncomparison of the most effective techniques\" Energies, vol.12, no.\n9, pp.1621, 2019.",
+          "reading_order": 17
+        },
+        {
+          "label": "reference",
+          "bbox": [
+            328,
+            554,
+            588,
+            597
+          ],
+          "text": "[6] Li, Y., He, Y., Su, Y., & Shu, L. (2016). \"Forecasting the daily\npower output of a grid-connected photovoltaic system based on\nmultivariate adaptive regression splines\". Applied Energy, no.180,\npp. 392-401, 2016.",
+          "reading_order": 18
+        },
+        {
+          "label": "reference",
+          "bbox": [
+            328,
+            599,
+            588,
+            632
+          ],
+          "text": "[7] Malvoni, M., De Giorgi, M. G., & Congedo, P. M. (2016). \"Data\non Support Vector Machines (SVM) model to forecast photovoltaic\npower\". Data in brief, vol. 9, pp. 13-16, 2016.",
+          "reading_order": 19
+        },
+        {
+          "label": "reference",
+          "bbox": [
+            328,
+            633,
+            588,
+            677
+          ],
+          "text": "[8] Pathak, P. K., Yadav, A. K., & Alvi, P. A. (2020). Advanced solar\nMPPT techniques under uniform and non-uniform irradiance: a\ncomprehensive review. Journal of Solar Energy\nEngineering, 142 (4), 040801.",
+          "reading_order": 20
+        },
+        {
+          "label": "reference",
+          "bbox": [
+            328,
+            677,
+            588,
+            721
+          ],
+          "text": "[9] S. Siami-Namini, N. Tavakoli, and A. Siami Namin, \"A\nComparison of ARIMA and LSTM in Forecasting Time Series,\" in\nProceedings - 17th IEEE International Conference on Machine\nLearning and Applications, ICMLA pp. 1394–1401,Dec2018",
+          "reading_order": 21
+        },
+        {
+          "label": "reference",
+          "bbox": [
+            324,
+            722,
+            588,
+            777
+          ],
+          "text": "[10] Zang, H., Cheng, L., Ding, T., Cheung, K. W., Wei, Z., & Sun, G.\n\"Day-ahead photovoltaic power forecasting approach based on\ndeep convolutional neural networks and meta\nlearning\". International Journal of Electrical Power & Energy\nSystems, vol.118, pp.105790,Jun2020",
+          "reading_order": 22
+        },
+        {
+          "label": "reference",
+          "bbox": [
+            324,
+            779,
+            588,
+            800
+          ],
+          "text": "[11] Ananthu, D. P., & Neelashetty, K. (2021, April). \"A study of\n100kWp PV Plant Output Power Forecasting: A case study\"",
+          "reading_order": 23
+        }
+      ]
+    },
+    {
+      "page_number": 5,
+      "elements": [
+        {
+          "label": "reference",
+          "bbox": [
+            74,
+            56,
+            311,
+            80
+          ],
+          "text": "In 2021 5th International Conference on Computing Methodologies\nand Communication (ICCMC),pp. 723-728 IEEE, 2021.",
+          "reading_order": 0
+        },
+        {
+          "label": "reference",
+          "bbox": [
+            47,
+            80,
+            311,
+            126
+          ],
+          "text": "[12] Wang, F., Yu, Y., Zhang, Z., Li, J., Zhen, Z., & Li, K. \"Wavelet\ndecomposition and convolutional LSTM networks based improved\ndeep learning model for solar irradiance forecasting\" applied\nsciences, vol.8, no.8, pp.1286, 2018.",
+          "reading_order": 1
+        },
+        {
+          "label": "reference",
+          "bbox": [
+            47,
+            126,
+            311,
+            169
+          ],
+          "text": "[13] Husein, M., & Chung, I. Y. \"Day-ahead solar irradiance forecasting\nfor microgrids using a long short-term memory recurrent neural\nnetwork: A deep learning approach\" Energies, vol.12, no.10,\npp.1856, 2019.",
+          "reading_order": 2
+        },
+        {
+          "label": "reference",
+          "bbox": [
+            47,
+            169,
+            311,
+            204
+          ],
+          "text": "[14] Sharma, A., & Kakkar, A. \"Forecasting daily global solar\nirradiance generation using machine learning\". Renewable and\nSustainable Energy Reviews, vol.82, pp. 2254-2269, Feb2018",
+          "reading_order": 3
+        },
+        {
+          "label": "reference",
+          "bbox": [
+            47,
+            204,
+            311,
+            248
+          ],
+          "text": "[15] Ağbulut, Ö., Gürel, A. E., & Biçen, Y. \" Prediction of daily global\nsolar radiation using different machine learning algorithms:\nEvaluation and comparison\" Renewable and Sustainable Energy\nReviews, vol.135, pp.110114, 2021",
+          "reading_order": 4
+        },
+        {
+          "label": "reference",
+          "bbox": [
+            47,
+            248,
+            310,
+            282
+          ],
+          "text": "[16] Tang, N., Mao, S., Wang, Y., & Nelms, R. M. \"Solar power\ngeneration forecasting with a LASSO-based approach\". IEEE\nInternet of Things Journal, vol.5, no.2,pp.1090-1099, Mar 2018.",
+          "reading_order": 5
+        },
+        {
+          "label": "reference",
+          "bbox": [
+            47,
+            282,
+            310,
+            328
+          ],
+          "text": "[17] Wang, J., Zhong, H., Lai, X., Xia, Q., Wang, Y., & Kang, C.\n\"Exploring key weather factors from analytical modeling toward\nimproved solar power forecasting\". IEEE Transactions on Smart\nGrid, vol.10, pp.2, pp.1417-1427, 2017.",
+          "reading_order": 6
+        },
+        {
+          "label": "reference",
+          "bbox": [
+            47,
+            328,
+            311,
+            374
+          ],
+          "text": "[18] Oneto, L., Laureri, F., Robba, M., Delfino, F., & Anguita, D.\n“Data-driven photovoltaic power production nowcasting and\nforecasting for polygoneration microgrids.” IEEE Systems\nJournal, vol.12, no.3, pp. 2842-2853, 2017.",
+          "reading_order": 7
+        },
+        {
+          "label": "reference",
+          "bbox": [
+            324,
+            56,
+            588,
+            103
+          ],
+          "text": "[19] Pathak, P. K., Yadav, A. K., & Alvi, P. A. A state-of-the-art review\non shading mitigation techniques in solar photovoltaics via meta-\nheuristic approach. Neural Computing and Applications , vol. 34,\nno.1, pp. 171-209, 2022.",
+          "reading_order": 8
+        },
+        {
+          "label": "reference",
+          "bbox": [
+            324,
+            103,
+            588,
+            148
+          ],
+          "text": "[20] Pathak, P. K., Padmanaban, S., Yadav, A. K., Alvi, P. A., & Khan,\nB. Modified incremental conductance MPPT algorithm for\nSPV-based grid-tied and stand-alone systems. IET Generation,\nTransmission & Distribution, vol. 16, no. 4, pp. 776–791, 2022.",
+          "reading_order": 9
+        },
+        {
+          "label": "reference",
+          "bbox": [
+            324,
+            148,
+            588,
+            182
+          ],
+          "text": "[21] Antonanzas, J., Osorio, N., Escobar, R., Urraca, R., Martinez-de-\nPison, F. J., & Antonanzas-Torres, F. \"Review of photovoltaic\npower forecasting.\" Solar energy, vol.136, pp.78-111, 2016.",
+          "reading_order": 10
+        },
+        {
+          "label": "reference",
+          "bbox": [
+            324,
+            182,
+            588,
+            226
+          ],
+          "text": "[22] Li, L. L., Wen, S. Y., Tseng, M. L., & Wang, C. S. \"Renewable\nenergy prediction: A novel short-term prediction model of\nphotovoltaic output power\" Journal of Cleaner Production, vol.\n228, pp.359-375, 2019.",
+          "reading_order": 11
+        },
+        {
+          "label": "reference",
+          "bbox": [
+            325,
+            226,
+            588,
+            249
+          ],
+          "text": "[23] https://www.kaggle.com/chaitanyakumar12/time-series forecasting-\nof-solar-energy",
+          "reading_order": 12
+        },
+        {
+          "label": "reference",
+          "bbox": [
+            324,
+            249,
+            566,
+            261
+          ],
+          "text": "[24] Taylor, S. J., & Letham, B. (2017). Forecasting at scale. 2017",
+          "reading_order": 13
+        },
+        {
+          "label": "reference",
+          "bbox": [
+            324,
+            261,
+            588,
+            293
+          ],
+          "text": "[25] Chen, T., He, T., Benesty, M., Khotilovich, V., Tang, Y., Cho, H.,\n& Li, Y. xgboost: Extreme gradient boosting. R package version\n0.90, 2019.",
+          "reading_order": 14
+        },
+        {
+          "label": "reference",
+          "bbox": [
+            325,
+            293,
+            588,
+            338
+          ],
+          "text": "[26] Al-Rakhami, M., Gumaei, A., Alsanad, A., Alamri, A., & Hassan,\nM. M., “An ensemble learning approach for accurate energy load\nprediction in residential buildings.” IEEE Access, vol.7, pp.48328-\n48338.,Apr2019",
+          "reading_order": 15
+        },
+        {
+          "label": "reference",
+          "bbox": [
+            324,
+            338,
+            588,
+            384
+          ],
+          "text": "[27] Pathak, P. K., Yadav, A. K., & Tyagi, P., \"Design of three phase\ngrid tied solar photovoltaic system based on three phase VSI,\"\nIn 2018 8th IEEE India International Conference on Power\nElectronics (IICPE), pp. 1-6, 2018.",
+          "reading_order": 16
+        }
+      ]
+    }
+  ]
+}
